@@ -1,0 +1,9 @@
+ <section>
+ 	       <%= render 'shared/success' %>	
+    	   <p align="center"><strong><%=@article.title%></strong><p>
+		   <p align="center"><small>标签:<%=@article.tag%> &nbsp; &nbsp; &nbsp; 新建时间:<%=@article.created_at%></small></p>
+		    
+		    </br>
+		   <%=raw @article.content%>
+			</br>	
+ </section>				

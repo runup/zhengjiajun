@@ -1,0 +1,22 @@
+<% provide(:title, @user.name) %>
+<div class="row">
+	<aside class="span4">
+		<section>
+			<h1>
+				
+				<%= @user.name %>
+			</h1>
+		</section>
+	</aside>
+	
+	<aside class="span8">
+		<section>
+				<ul>
+				<%@articles.each do |article| %>
+					<li><%=link_to article.title,article_path(article) %></li>
+				<%end%>
+			    </ul>
+		</section>
+	</aside>
+</div>
+

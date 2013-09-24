@@ -1,0 +1,29 @@
+ <% provide(:title,@article.title)%>
+
+
+ <div class="row">
+        <div class="span10">
+        <%= render 'shared/top' %>
+		<%= render 'shared/article' %>
+        <%= render 'shared/comments' %>
+        <%= render 'shared/comment' %> 
+        </div>
+
+        <div class="span2">
+         <section >  
+              &nbsp;&nbsp;&nbsp;<img src="../assets/zhengjiajun.jpg">
+         </section>
+        <%= render 'shared/information' %>	      
+	    <%= render 'shared/search' %>	
+        <%= render 'shared/tips' %>	
+        </div>  
+            
+</div>
+
+
+
+
+
+
+
+
